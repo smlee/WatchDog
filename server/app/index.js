@@ -2,6 +2,7 @@
 var path = require('path');
 var express = require('express');
 var app = express();
+var pfUI = require('pathfinder-ui');
 module.exports = app;
 
 // Pass our express application pipeline into the configuration
@@ -12,6 +13,10 @@ require('./configure')(app);
 // /api so they are isolated from our GET /* wildcard.
 app.use('/api', require('./routes'));
 
+app.use('/pf', function(res, req, next){
+    pfUI(app);
+    next();
+}, pfUI.router);
 
 /*
  This middleware will catch any URLs resembling a file extension
@@ -19,6 +24,9 @@ app.use('/api', require('./routes'));
  This allows for proper 404s instead of the wildcard '/*' catching
  URLs that bypass express.static because the given file does not exist.
  */
+
+
+
 app.use(function (req, res, next) {
 
     if (path.extname(req.path).length > 0) {

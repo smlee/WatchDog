@@ -35,5 +35,4 @@ app.controller('WatchDogCtrl', function($scope){
 	    	});	
     	}
     }
-     
 });

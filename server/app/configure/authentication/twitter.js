@@ -16,7 +16,13 @@ module.exports = function (app) {
     };
 
     var createNewUser = function (token, tokenSecret, profile) {
+        console.log("============NAME==============",profile._json.name);
+        var nameArr = profile._json.name.split();
+        var first_name = nameArr[0];
+        var last_name = nameArr[1] || "";
         return UserModel.create({
+            first_name: first_name,
+            last_name: last_name,
             twitter: {
                 id: profile.id,
                 username: profile.username,
