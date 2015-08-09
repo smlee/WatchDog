@@ -56,9 +56,10 @@ section{
 	background-color: #FEFEFE;
 }
 .api{
-	width: 20%;
+	text-align: center;
 	img{
-		width: 100%;
+		width: 200px;
+		margin: 0 auto;
 	}
 }
 
@@ -72,4 +73,13 @@ section{
 	h2{
 		text-align: center;
 	}
+}
+
+.member{
+	text-align: center;
+}
+
+hr{
+	border-top: 5px solid #eee;
+	width: 60%;
 }

@@ -17,9 +17,25 @@
     <script src="/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/angular-bootstrap/ui-bootstrap.js"></script>
     <script src="/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="/webcam-directive/app/scripts/webcam.js"></script>
     <script src="/socket.io-client/socket.io.js"></script>
     <script type="text/javascript" src="/webcam.js"></script>
     <script src="/main.js"></script>
+    <script>
+        var socket = io.connect('http://localhost:1337');
+        socket.on('connect', function (data) {
+            console.log("connect",data);
+            // GREEN LIGHT - LOCK AND WALK
+            // socket.emit('my other event', { my: 'data' });
+        });
+        socket.on('connect_error', function (data) {
+            console.log("connect_error",data);
+            // CONNECTION LOST - BARK!!!
+            // socket.emit('my other event', { my: 'data' });
+        });
+        socket.on('message', function (data) {
+            console.log("message",data);
+            // socket.emit('my other event', { my: 'data' });
+        });
+    </script>
 </body>
 </html>
