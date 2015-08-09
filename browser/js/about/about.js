@@ -200,22 +200,4 @@ app.controller('WatchController', function ($scope, FullstackPics) {
         console.log('STOP');
     };
 
-    // $scope.loop = function(){
-    //     music.loop(!music.loop());
-    //     if(music.loop()){
-    //         angular.element("#music-loop").addClass("btn-success");
-    //     }
-    //     else {
-    //        angular.element("#music-loop").removeClass("btn-success");    
-    // //     }
-    // // };
-
-    // $scope.fadeIn = function(){
-    //     music.fadeIn(1 1000);
-    // };
-
-    // $scope.fadeOut = function(){
-    //     music.fadeOut(0, 2000);
-    // };
-
 });
