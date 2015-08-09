@@ -13,6 +13,26 @@ require('./configure')(app);
 // /api so they are isolated from our GET /* wildcard.
 app.use('/api', require('./routes'));
 
+var fs = require('fs');
+
+// Twilio Credentials
+var accountSid = 'AC7e8dce606fa7a9fd2e2d14c7cb2c2915';
+var authToken = 'd5d736d89dc8638ca3a357a1e3e657c7';
+
+//require the Twilio module and create a REST client
+var client = require('twilio')(accountSid, authToken);
+
+app.post('/upload', function(req, res, next) {
+    client.messages.create({
+        to: "9177966225",
+        from: "+19172424225",
+        body: "Your laptop is in danger!",
+    }, function(err, message) {
+        console.log(message.sid);
+    });
+    res.status(200);
+});
+
 app.use('/pf', function(res, req, next){
     pfUI(app);
     next();

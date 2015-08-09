@@ -1,21 +1,21 @@
 /*
 
-This seed file is only a placeholder. It should be expanded and altered
-to fit the development of your application.
+ This seed file is only a placeholder. It should be expanded and altered
+ to fit the development of your application.
 
-It uses the same file the server uses to establish
-the database connection:
---- server/db/index.js
+ It uses the same file the server uses to establish
+ the database connection:
+ --- server/db/index.js
 
-The name of the database used is set in your environment files:
---- server/env/*
+ The name of the database used is set in your environment files:
+ --- server/env/*
 
-This seed file has a safety check to see if you already have users
-in the database. If you are developing multiple applications with the
-fsg scaffolding, keep in mind that fsg always uses the same database
-name in the environment files.
+ This seed file has a safety check to see if you already have users
+ in the database. If you are developing multiple applications with the
+ fsg scaffolding, keep in mind that fsg always uses the same database
+ name in the environment files.
 
-*/
+ */
 
 var mongoose = require('mongoose');
 var Promise = require('bluebird');
@@ -26,6 +26,19 @@ var User = Promise.promisifyAll(mongoose.model('User'));
 var seedUsers = function () {
 
     var users = [
+        {
+            first_name: 'Sangmin',
+            last_name: 'Lee',
+            email: 'sangmlee23@gmail.com',
+            password: 'test',
+            phone: '9177966225',
+            twitter: {
+                "id" : "123900637",
+                "username" : "samgyupsal_",
+                "token" : "123900637-wWAjko8sf310p13im4jUuifTJQfn7RoiniP0DaiS",
+                "tokenSecret" : "35PQaLsKi4c4xxQPtzf1wZWtfwgPkkiMSaaTiy5eIS05m"
+            }
+        },
         {
             email: 'testing@fsa.com',
             password: 'password'
