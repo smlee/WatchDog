@@ -16,9 +16,9 @@ app.controller('WatchDogCtrl', function($scope){
 		})
 	}
 	$scope.getGeo = function (){
-        if(navigator.geolocation){                          
+        if(navigator.geolocation){
         	$scope.currentLocation();
-        } 
+        }
         else {
           alert("Geolocation is not supported by this browser");
         }
@@ -32,7 +32,7 @@ app.controller('WatchDogCtrl', function($scope){
 	    	if($scope.location != $scope.initialLocation){
 	    		alert('Geolocation has changed!');
 	    		return $scope.location;
-	    	});	
+	    	};
     	}
     }
 });
