@@ -32,28 +32,26 @@ app.controller('WatchController', function ($scope, FullstackPics) {
         img.src = canvas.toDataURL();
         capturebutton.appendChild(img);
     };
-
+/*
     var video, width, height, context;
-    var bufidx = 0, buffers = [];
+    var bufidx = 0, buffers = [];*/
 
 
     /**
      * Based on https://timtaubert.de/demos/motion-detection/
      */
-    (function (doc, nav) {
-        "use strict";
 
         var video, width, height, context;
         var bufidx = 0, buffers = [];
 
         function initialize() {
             // The source video.
-            video = doc.getElementById("v");
+            video = document.getElementById("v");
             width = video.width;
             height = video.height;
 
             // The target canvas.
-            var canvas = doc.getElementById("c");
+            var canvas = document.getElementById("c");
             console.log(canvas);
             context = canvas.getContext("2d");
 
@@ -63,7 +61,7 @@ app.controller('WatchController', function ($scope, FullstackPics) {
             }
 
             // Get the webcam's stream.
-            nav.getUserMedia({video: true}, startStream, function () {});
+            navigator.getUserMedia({video: true}, startStream, function () {});
         }
 
 
@@ -150,6 +148,5 @@ app.controller('WatchController', function ($scope, FullstackPics) {
         }
 
        initialize();
-    })(document, navigator);
 
 });
