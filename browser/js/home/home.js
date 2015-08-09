@@ -29,7 +29,7 @@ app.controller('WatchDogCtrl', function($scope){
     	$scope.initialLocation = $scope.location;
     	$scope.currentLocation();
     	while($scope.watch){
-	    	if($scope.location != $scope.initialLocation){
+	    	if($scope.location !== $scope.initialLocation){
 	    		alert('Geolocation has changed!');
 	    		return $scope.location;
 	    	};
