@@ -49,7 +49,9 @@
     });
 
     app.service('AuthService', function ($http, Session, $rootScope, AUTH_EVENTS, $q) {
-
+        var oauthURIs = {
+            twitter: 'http://127.0.0.1:1337/auth/twitter'
+        }
         function onSuccessfulLogin(response) {
             var data = response.data;
             Session.create(data.id, data.user);
@@ -100,6 +102,10 @@
                 $rootScope.$broadcast(AUTH_EVENTS.logoutSuccess);
             });
         };
+
+        this.twitterAuth = function() {
+            window.location.href = oauthURIs.twitter;
+        }
 
     });
 
