@@ -4,6 +4,27 @@
             <li ng-repeat="item in items" ng-show="!item.auth || isLoggedIn()">
                 <a ui-sref-active="active" ui-sref="{{ item.state }}">{{ item.label }}</a>
             </li>
+            <li>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+<!-- Identify your business so that you can collect the payments. -->
+<input type="hidden" name="business" value="dnadgar@gmail.com">
+
+<!-- Specify a Donate button. -->
+<input type="hidden" name="cmd" value="_donations">
+
+<!-- Specify details about the contribution -->
+<input type="hidden" name="item_name" value="Donation">
+<input type="hidden" name="item_number" value="Donation"> 
+<select name="amount" style="display: none; margin-top: 10px;"><option value="10.00" selected>$10.00</option></select>
+<input type="hidden" name="currency_code" value="EUR">
+
+<!-- Display the payment button. -->
+<input class='donate-btn', type="image" name="submit" border="0" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" alt="PayPal - The safer, easier way to pay online">
+</form>
+
+            </li>
         </ul>
         <button ng-show="!user" ui-sref="login" class="btn login-button">Login</button>
         <div ng-show="user" class="welcome">
