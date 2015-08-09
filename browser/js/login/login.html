@@ -1,4 +1,6 @@
-<form id="login-form" name="loginForm" ng-submit="loginForm.$valid && sendLogin(login)">
+<section id='login'>
+
+<form class='login-form' name="loginForm" ng-submit="loginForm.$valid && sendLogin(login)">
 
     <alert type="danger" ng-show="error">
         {{ error }}
@@ -12,6 +14,9 @@
         <label for="login-password">Password</label>
         <input type="password" ng-model="login.password" class="form-control" id="login-password" placeholder="Password">
     </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="submit" class="login btn btn-default">Submit</button>
+    <button type="submit" class="twitter btn btn btn-default" ng-click="twitterAuth()">Log in with Twitter</button>    
 </form>
-    <button type="submit" class="btn btn-default" ng-click="twitterAuth()">Log in with Twitter</button>
+
+<div class='twitter'></div>
+</section>  

@@ -1,4 +1,31 @@
-#login-form {
-  width: 60%;
-  margin: 0 auto;
+#login{
+	background: url(/images/bg.jpg);
+	background-size: cover;
+}
+
+
+.login-form {
+  width: 50%;
+  margin: 0  auto;
+  padding: 80px;
+  background-color: black;
+  opacity: 0.85;
+  color: white;	
+  .btn{
+	  color: white;
+	  border: 1px solid white;
+	  background-color: transparent;
+	  &:hover{
+	  	color: #ffc400;
+	  }
+  }
+}
+
+.twitter{
+	margin-top: 20px;
+	float: right;
+}
+
+.login{
+	margin-top: 20px;
 }
