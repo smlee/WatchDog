@@ -19,6 +19,11 @@ app.use('/api', require('./routes'));
  This allows for proper 404s instead of the wildcard '/*' catching
  URLs that bypass express.static because the given file does not exist.
  */
+
+// /bower_components/webcam-directive/app/scripts/webcam.js
+var bowerPath = path.join(__dirname, '../../bower_components');
+app.use(express.static(bowerPath));
+
 app.use(function (req, res, next) {
 
     if (path.extname(req.path).length > 0) {
