@@ -1,28 +1,75 @@
 #home {
 	background-color: black;
-  
+  	.section-content{
+  		padding: 100px;
+  	}
   	h1 {
 	    margin-top: 40px;
 	    text-align: center;
+	    color: white;
   	}
 }
 
+.brand{
+	font-family: 'Frijole', cursive;
+	font-size: 80px;
+}
+
 section{
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .section-content{
-	padding: 40px;
+	padding: 60px;
 }
 
 .title{
 	text-align: center;
 	font-weight: bolder;
+	margin-bottom: 40px;
 }
 
 #about{
 	background-color: #CAC3BB;
+	.section-content{
+		position: relative;
+	}
+	h1{
+		margin-bottom: 40px;
+	}
+	p {
+	    text-align: justify;
+	    font-size: 22px;
+	    font-weight: 300;
+	    float: left;
+	    vertical-align: middle;
+	    padding: 0;
+	  }
+	img{
+	  	bottom: 0;
+	  	right: 0;
+	  }	
 }
 
+
+#friends{
+	background-color: #FEFEFE;
+}
 .api{
+	width: 20%;
+	img{
+		width: 100%;
+	}
+}
+
+#team{
+	text-align: center;
+	img{
+		border-radius: 50%;
+		width: 200px;
+		margin: 0 auto;
+	}
+	h2{
+		text-align: center;
+	}
 }
