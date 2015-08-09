@@ -1,11 +1,11 @@
 <section id="watch">
-
-    <img></img>
-    <button ng-click='guard()'>Guard</button> <button ng-click='watch = false' ng-hide='watch'>Sit</button>
+<div class='section-content'>
+    <img src='/images/dog.jpg' class='watch-dog'></img>
+    <button ng-click='guard()' ng-hide='watch' class='btn guard-btn'>Guard</button> <button ng-click='watch = false' ng-show='watch' class='btn guard-btn'>Sit</button>
 
     <webcam on-stream="onStream(stream)"
     on-access-denied="onError(err)"
     on-streaming="onSuccess()"
     placeholder="'img/ajax-loader.gif'"></webcam>
-
+</div>
 </section>
