@@ -3,6 +3,8 @@ var crypto = require('crypto');
 var mongoose = require('mongoose');
 
 var schema = new mongoose.Schema({
+    first_name: String,
+    last_name: String,
     email: {
         type: String
     },
@@ -24,6 +26,9 @@ var schema = new mongoose.Schema({
     google: {
         id: String
     }
+},{
+    toObject: {virtual: true},
+    toJSON: {virtual: true}
 });
 
 // generateSalt, encryptPassword and the pre 'save' and 'correctPassword' operations
@@ -38,6 +43,10 @@ var encryptPassword = function (plainText, salt) {
     hash.update(salt);
     return hash.digest('hex');
 };
+
+schema.virtual('full_name').get(function () {
+    return first_name + " " + last_name;
+})
 
 schema.pre('save', function (next) {
 
