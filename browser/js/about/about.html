@@ -3,9 +3,8 @@
     <img src='/images/dog.jpg' class='watch-dog'></img>
     <button ng-click='guard()' ng-hide='watch' class='btn guard-btn'>Guard</button> <button ng-click='watch = false' ng-show='watch' class='btn guard-btn'>Sit</button>
 
-    <webcam on-stream="onStream(stream)"
-    on-access-denied="onError(err)"
-    on-streaming="onSuccess()"
-    placeholder="'img/ajax-loader.gif'"></webcam>
+    <video id="v" width="320" height="240"></video>
+
+    <canvas id="c" width="320" height="240"></canvas>
 </div>
 </section>
