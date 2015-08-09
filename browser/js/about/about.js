@@ -35,6 +35,7 @@ app.controller('WatchController', function ($scope, Uploader) {
     $scope.currentLocation();
 
     $scope.guard = function(){
+        isGaurding = true;
     	$scope.watch = true;
     	$scope.getGeo();
     	$scope.initialLocation = $scope.location;
@@ -45,11 +46,29 @@ app.controller('WatchController', function ($scope, Uploader) {
 	    // 		return $scope.location;
 	    // 	};
     	// }
-    }
+    };
+
+    // THE BARK
+    var music = new Howl({
+        urls: ['/sounds/dog_german_shepherd_dog_barking_inside_kennel.mp3']
+    });
+
+    console.log("loading", music);
+
+    $scope.play = function(){
+        music.play();
+        console.log('PLAY');
+    };
+
+    $scope.stop = function(){
+        music.stop();
+        console.log('STOP');
+    };
+
 
     $scope.capture = function(){
-        var video = document.getElementsByClassName('webcam-live')[0];
-        var capturebutton = document.getElementById('capture-button');
+        var video = document.getElementById('v');
+        var capturebutton = document.getElementById('c');
 
         var canvas = document.createElement("canvas");
         canvas.width = video.videoWidth;
@@ -128,6 +147,7 @@ app.controller('WatchController', function ($scope, Uploader) {
     var htc = 0, ltc = 0, htt, ltt;
 
     function hManage() {
+        $scope.play();
         $scope.capture();
         isHTriggered = true;
     }
@@ -162,6 +182,7 @@ app.controller('WatchController', function ($scope, Uploader) {
 
                     //if there are over 500 low risk triggers send text to user
                     if (l > 500 && !isLTriggered && !isHTriggered){
+                        $scop.play();
                         $scope.capture();
                         isLTriggered = true;
                     }
@@ -187,21 +208,5 @@ app.controller('WatchController', function ($scope, Uploader) {
     initialize();
 
 
-    // THE BARK
-    var music = new Howl({
-      urls: ['/sounds/dog_german_shepherd_dog_barking_inside_kennel.mp3']
-    });
-
-    console.log("loading", music);
-
-    $scope.play = function(){
-        music.play();
-        console.log('PLAY');
-    };
-
-    $scope.stop = function(){
-        music.stop();
-        console.log('STOP');
-    };
 
 });
