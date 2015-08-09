@@ -1,0 +1,354 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.6
+4 verbose readDependencies loading dependencies from /home/dj/host/battlehack/package.json
+5 warn package.json FullstackGeneratedApp@1.0.0 No repository field.
+6 warn package.json FullstackGeneratedApp@1.0.0 No README data
+7 warn package.json FullstackGeneratedApp@1.0.0 No license field.
+8 verbose install where, deps [ '/home/dj/host/battlehack',
+8 verbose install   [ 'angular',
+8 verbose install     'angular-bootstrap',
+8 verbose install     'angular-mocks',
+8 verbose install     'angular-ui-router',
+8 verbose install     'babel',
+8 verbose install     'bluebird',
+8 verbose install     'body-parser',
+8 verbose install     'bootstrap',
+8 verbose install     'chai',
+8 verbose install     'chalk',
+8 verbose install     'connect-mongo',
+8 verbose install     'cookie-parser',
+8 verbose install     'express',
+8 verbose install     'express-session',
+8 verbose install     'gulp',
+8 verbose install     'gulp-babel',
+8 verbose install     'gulp-concat',
+8 verbose install     'gulp-eslint',
+8 verbose install     'gulp-istanbul',
+8 verbose install     'gulp-livereload',
+8 verbose install     'gulp-minify-css',
+8 verbose install     'gulp-mocha',
+8 verbose install     'gulp-ng-annotate',
+8 verbose install     'gulp-plumber',
+8 verbose install     'gulp-rename',
+8 verbose install     'gulp-sass',
+8 verbose install     'gulp-sourcemaps',
+8 verbose install     'gulp-uglify',
+8 verbose install     'karma',
+8 verbose install     'karma-chai',
+8 verbose install     'karma-coverage',
+8 verbose install     'karma-mocha',
+8 verbose install     'karma-mocha-reporter',
+8 verbose install     'karma-phantomjs-launcher',
+8 verbose install     'lodash',
+8 verbose install     'mocha-mongoose',
+8 verbose install     'mongodb',
+8 verbose install     'mongoose',
+8 verbose install     'nodemon',
+8 verbose install     'passport',
+8 verbose install     'passport-facebook',
+8 verbose install     'passport-google-oauth',
+8 verbose install     'passport-local',
+8 verbose install     'passport-twitter',
+8 verbose install     'run-sequence',
+8 verbose install     'serve-favicon',
+8 verbose install     'sinon',
+8 verbose install     'socket.io',
+8 verbose install     'socket.io-client',
+8 verbose install     'supertest' ] ]
+9 verbose install where, peers [ '/home/dj/host/battlehack', [] ]
+10 verbose installManyTop reading for lifecycle /home/dj/host/battlehack/package.json
+11 info preinstall FullstackGeneratedApp@1.0.0
+12 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/angular/package.json
+13 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/angular-bootstrap/package.json
+14 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/angular-mocks/package.json
+15 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/angular-ui-router/package.json
+16 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/babel/package.json
+17 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/bluebird/package.json
+18 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/body-parser/package.json
+19 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/bootstrap/package.json
+20 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/chai/package.json
+21 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/chalk/package.json
+22 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/connect-mongo/package.json
+23 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/cookie-parser/package.json
+24 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/express/package.json
+25 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/express-session/package.json
+26 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp/package.json
+27 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-babel/package.json
+28 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-concat/package.json
+29 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-eslint/package.json
+30 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-istanbul/package.json
+31 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-livereload/package.json
+32 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-minify-css/package.json
+33 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-mocha/package.json
+34 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-ng-annotate/package.json
+35 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-plumber/package.json
+36 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-rename/package.json
+37 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-sass/package.json
+38 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-sourcemaps/package.json
+39 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/gulp-uglify/package.json
+40 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/karma/package.json
+41 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/karma-chai/package.json
+42 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/karma-coverage/package.json
+43 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/karma-mocha/package.json
+44 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/karma-mocha-reporter/package.json
+45 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/karma-phantomjs-launcher/package.json
+46 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/lodash/package.json
+47 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/mocha/package.json
+48 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/mocha-mongoose/package.json
+49 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/mongodb/package.json
+50 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/mongoose/package.json
+51 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/nodemon/package.json
+52 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/passport/package.json
+53 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/passport-facebook/package.json
+54 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/passport-google-oauth/package.json
+55 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/passport-local/package.json
+56 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/passport-twitter/package.json
+57 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/run-sequence/package.json
+58 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/serve-favicon/package.json
+59 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/sinon/package.json
+60 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/socket.io/package.json
+61 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/socket.io-client/package.json
+62 verbose installManyTop reading scoped package data from /home/dj/host/battlehack/node_modules/supertest/package.json
+63 info package.json angular-bootstrap@0.12.2 No README data
+64 info package.json karma-phantomjs-launcher@0.1.4 No README data
+65 info package.json karma-coverage@0.2.7 No README data
+66 info package.json karma-mocha@0.1.10 No README data
+67 info package.json angular-ui-router@0.2.15 No license field.
+68 info package.json connect-mongo@0.7.0 No license field.
+69 info package.json gulp-istanbul@0.9.0 No license field.
+70 info package.json gulp-plumber@0.6.6 No license field.
+71 info package.json gulp-eslint@0.14.0 No license field.
+72 info package.json gulp-rename@1.2.2 No license field.
+73 info package.json gulp-minify-css@0.4.6 No license field.
+74 info package.json gulp-ng-annotate@0.5.3 license should be a valid SPDX license expression
+75 info package.json passport-local@1.0.0 No license field.
+76 info package.json mongodb@1.4.39 No license field.
+77 info package.json passport-twitter@1.0.3 No license field.
+78 info package.json passport-facebook@1.0.3 No license field.
+79 info package.json passport-google-oauth@0.1.5 No license field.
+80 info package.json socket.io@1.3.6 No license field.
+81 verbose readDependencies loading dependencies from /home/dj/host/battlehack/package.json
+82 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/angular/package.json
+83 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/angular-bootstrap/package.json
+84 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/angular-mocks/package.json
+85 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/angular-ui-router/package.json
+86 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/babel/package.json
+87 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/bluebird/package.json
+88 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/body-parser/package.json
+89 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/bootstrap/package.json
+90 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/chai/package.json
+91 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/chalk/package.json
+92 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/connect-mongo/package.json
+93 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/cookie-parser/package.json
+94 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/express/package.json
+95 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/express-session/package.json
+96 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp/package.json
+97 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-babel/package.json
+98 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-concat/package.json
+99 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-eslint/package.json
+100 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-istanbul/package.json
+101 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-livereload/package.json
+102 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-minify-css/package.json
+103 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-mocha/package.json
+104 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-ng-annotate/package.json
+105 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-plumber/package.json
+106 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-rename/package.json
+107 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-sass/package.json
+108 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-sourcemaps/package.json
+109 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/gulp-uglify/package.json
+110 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/karma/package.json
+111 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/karma-chai/package.json
+112 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/karma-coverage/package.json
+113 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/karma-mocha/package.json
+114 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/karma-mocha-reporter/package.json
+115 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/karma-phantomjs-launcher/package.json
+116 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/lodash/package.json
+117 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/mocha/package.json
+118 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/mocha-mongoose/package.json
+119 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/mongodb/package.json
+120 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/mongoose/package.json
+121 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/nodemon/package.json
+122 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/passport/package.json
+123 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/passport-facebook/package.json
+124 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/passport-google-oauth/package.json
+125 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/passport-local/package.json
+126 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/passport-twitter/package.json
+127 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/run-sequence/package.json
+128 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/serve-favicon/package.json
+129 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/sinon/package.json
+130 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/socket.io/package.json
+131 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/socket.io-client/package.json
+132 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/supertest/package.json
+133 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/babel/package.json
+134 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/babel-external-helpers/package.json
+135 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/babel-external-helpers.cmd/package.json
+136 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/babel-node/package.json
+137 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/babel-node.cmd/package.json
+138 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/babel-plugin/package.json
+139 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/babel-plugin.cmd/package.json
+140 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/babel.cmd/package.json
+141 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/gulp/package.json
+142 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/gulp.cmd/package.json
+143 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/karma/package.json
+144 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/karma.cmd/package.json
+145 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/mocha/package.json
+146 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/mocha.cmd/package.json
+147 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/nodemon/package.json
+148 verbose targetResolver reading package data from /home/dj/host/battlehack/node_modules/.bin/nodemon.cmd/package.json
+149 verbose already installed skipping serve-favicon@^2.2.0 /home/dj/host/battlehack
+150 verbose already installed skipping sinon@^1.13.0 /home/dj/host/battlehack
+151 verbose already installed skipping socket.io@^1.3.4 /home/dj/host/battlehack
+152 verbose already installed skipping socket.io-client@^1.3.5 /home/dj/host/battlehack
+153 verbose already installed skipping supertest@^0.15.0 /home/dj/host/battlehack
+154 verbose already installed skipping angular@^1.4.0 /home/dj/host/battlehack
+155 verbose already installed skipping angular-bootstrap@^0.12.0 /home/dj/host/battlehack
+156 verbose already installed skipping angular-mocks@^1.4.0 /home/dj/host/battlehack
+157 verbose already installed skipping angular-ui-router@^0.2.15 /home/dj/host/battlehack
+158 verbose already installed skipping babel@^5.0.12 /home/dj/host/battlehack
+159 verbose already installed skipping bluebird@^2.9.34 /home/dj/host/battlehack
+160 verbose already installed skipping body-parser@^1.12.0 /home/dj/host/battlehack
+161 verbose already installed skipping bootstrap@^3.3.4 /home/dj/host/battlehack
+162 verbose already installed skipping chai@^2.1.0 /home/dj/host/battlehack
+163 verbose already installed skipping chalk@^1.0.0 /home/dj/host/battlehack
+164 verbose already installed skipping connect-mongo@^0.7.0 /home/dj/host/battlehack
+165 verbose already installed skipping cookie-parser@^1.3.4 /home/dj/host/battlehack
+166 verbose already installed skipping express@^4.12.0 /home/dj/host/battlehack
+167 verbose already installed skipping express-session@^1.10.3 /home/dj/host/battlehack
+168 verbose already installed skipping gulp@^3.8.11 /home/dj/host/battlehack
+169 verbose already installed skipping gulp-babel@^5.1.0 /home/dj/host/battlehack
+170 verbose already installed skipping gulp-concat@^2.5.2 /home/dj/host/battlehack
+171 verbose already installed skipping gulp-eslint@^0.14.0 /home/dj/host/battlehack
+172 verbose already installed skipping gulp-istanbul@^0.9.0 /home/dj/host/battlehack
+173 verbose already installed skipping gulp-livereload@^3.7.0 /home/dj/host/battlehack
+174 verbose already installed skipping gulp-minify-css@^0.4.6 /home/dj/host/battlehack
+175 verbose already installed skipping gulp-mocha@^2.0.0 /home/dj/host/battlehack
+176 verbose already installed skipping gulp-ng-annotate@^0.5.2 /home/dj/host/battlehack
+177 verbose already installed skipping gulp-plumber@^0.6.6 /home/dj/host/battlehack
+178 verbose already installed skipping gulp-rename@^1.2.0 /home/dj/host/battlehack
+179 verbose already installed skipping gulp-sass@^1.3.3 /home/dj/host/battlehack
+180 verbose already installed skipping gulp-sourcemaps@^1.3.0 /home/dj/host/battlehack
+181 verbose already installed skipping gulp-uglify@^1.1.0 /home/dj/host/battlehack
+182 verbose already installed skipping karma@^0.12.31 /home/dj/host/battlehack
+183 verbose already installed skipping karma-chai@^0.1.0 /home/dj/host/battlehack
+184 verbose already installed skipping karma-coverage@^0.2.7 /home/dj/host/battlehack
+185 verbose already installed skipping karma-mocha@^0.1.10 /home/dj/host/battlehack
+186 verbose already installed skipping karma-mocha-reporter@^1.0.2 /home/dj/host/battlehack
+187 verbose already installed skipping karma-phantomjs-launcher@^0.1.4 /home/dj/host/battlehack
+188 verbose already installed skipping lodash@^3.9.3 /home/dj/host/battlehack
+189 verbose already installed skipping mocha-mongoose@^1.0.3 /home/dj/host/battlehack
+190 verbose already installed skipping mongodb@^1.4.33 /home/dj/host/battlehack
+191 verbose already installed skipping mongoose@^4.0.7 /home/dj/host/battlehack
+192 verbose already installed skipping nodemon@^1.3.7 /home/dj/host/battlehack
+193 verbose already installed skipping passport@^0.2.1 /home/dj/host/battlehack
+194 verbose already installed skipping passport-facebook@^1.0.3 /home/dj/host/battlehack
+195 verbose already installed skipping passport-google-oauth@^0.1.5 /home/dj/host/battlehack
+196 verbose already installed skipping passport-local@^1.0.0 /home/dj/host/battlehack
+197 verbose already installed skipping passport-twitter@^1.0.2 /home/dj/host/battlehack
+198 verbose already installed skipping run-sequence@^1.0.2 /home/dj/host/battlehack
+199 silly install resolved []
+200 info build /home/dj/host/battlehack
+201 info linkStuff FullstackGeneratedApp@1.0.0
+202 silly linkStuff FullstackGeneratedApp@1.0.0 has /home/dj/host as its parent node_modules
+203 verbose linkBins FullstackGeneratedApp@1.0.0
+204 verbose linkMans FullstackGeneratedApp@1.0.0
+205 verbose rebuildBundles FullstackGeneratedApp@1.0.0
+206 verbose rebuildBundles [ '.bin',
+206 verbose rebuildBundles   'angular',
+206 verbose rebuildBundles   'angular-bootstrap',
+206 verbose rebuildBundles   'angular-mocks',
+206 verbose rebuildBundles   'angular-ui-router',
+206 verbose rebuildBundles   'babel',
+206 verbose rebuildBundles   'bluebird',
+206 verbose rebuildBundles   'body-parser',
+206 verbose rebuildBundles   'bootstrap',
+206 verbose rebuildBundles   'chai',
+206 verbose rebuildBundles   'chalk',
+206 verbose rebuildBundles   'connect-mongo',
+206 verbose rebuildBundles   'cookie-parser',
+206 verbose rebuildBundles   'express',
+206 verbose rebuildBundles   'express-session',
+206 verbose rebuildBundles   'gulp',
+206 verbose rebuildBundles   'gulp-babel',
+206 verbose rebuildBundles   'gulp-concat',
+206 verbose rebuildBundles   'gulp-eslint',
+206 verbose rebuildBundles   'gulp-istanbul',
+206 verbose rebuildBundles   'gulp-livereload',
+206 verbose rebuildBundles   'gulp-minify-css',
+206 verbose rebuildBundles   'gulp-mocha',
+206 verbose rebuildBundles   'gulp-ng-annotate',
+206 verbose rebuildBundles   'gulp-plumber',
+206 verbose rebuildBundles   'gulp-rename',
+206 verbose rebuildBundles   'gulp-sass',
+206 verbose rebuildBundles   'gulp-sourcemaps',
+206 verbose rebuildBundles   'gulp-uglify',
+206 verbose rebuildBundles   'karma',
+206 verbose rebuildBundles   'karma-chai',
+206 verbose rebuildBundles   'karma-coverage',
+206 verbose rebuildBundles   'karma-mocha',
+206 verbose rebuildBundles   'karma-mocha-reporter',
+206 verbose rebuildBundles   'karma-phantomjs-launcher',
+206 verbose rebuildBundles   'lodash',
+206 verbose rebuildBundles   'mocha',
+206 verbose rebuildBundles   'mocha-mongoose',
+206 verbose rebuildBundles   'mongodb',
+206 verbose rebuildBundles   'mongoose',
+206 verbose rebuildBundles   'nodemon',
+206 verbose rebuildBundles   'passport',
+206 verbose rebuildBundles   'passport-facebook',
+206 verbose rebuildBundles   'passport-google-oauth',
+206 verbose rebuildBundles   'passport-local',
+206 verbose rebuildBundles   'passport-twitter',
+206 verbose rebuildBundles   'run-sequence',
+206 verbose rebuildBundles   'serve-favicon',
+206 verbose rebuildBundles   'sinon',
+206 verbose rebuildBundles   'socket.io',
+206 verbose rebuildBundles   'socket.io-client',
+206 verbose rebuildBundles   'supertest' ]
+207 verbose rebuild bundle /home/dj/host/battlehack/node_modules/mocha
+208 info build /home/dj/host/battlehack/node_modules/mocha
+209 info preinstall mocha@2.2.5
+210 info linkStuff mocha@2.2.5
+211 silly linkStuff mocha@2.2.5 has /home/dj/host/battlehack/node_modules as its parent node_modules
+212 verbose linkBins mocha@2.2.5
+213 verbose link bins [ { mocha: './bin/mocha', _mocha: './bin/_mocha' },
+213 verbose link bins   '/home/dj/host/battlehack/node_modules/.bin',
+213 verbose link bins   false ]
+214 verbose linkMans mocha@2.2.5
+215 verbose rebuildBundles mocha@2.2.5
+216 verbose rebuildBundles [ '.bin',
+216 verbose rebuildBundles   'commander',
+216 verbose rebuildBundles   'debug',
+216 verbose rebuildBundles   'diff',
+216 verbose rebuildBundles   'escape-string-regexp',
+216 verbose rebuildBundles   'glob',
+216 verbose rebuildBundles   'growl',
+216 verbose rebuildBundles   'jade',
+216 verbose rebuildBundles   'mkdirp',
+216 verbose rebuildBundles   'supports-color' ]
+217 silly gentlyRm /home/dj/host/battlehack/node_modules/.bin/_mocha is being purged
+218 verbose gentlyRm don't care about contents; nuking /home/dj/host/battlehack/node_modules/.bin/_mocha
+219 silly gentlyRm /home/dj/host/battlehack/node_modules/.bin/mocha is being purged
+220 verbose gentlyRm don't care about contents; nuking /home/dj/host/battlehack/node_modules/.bin/mocha
+221 silly vacuum-fs purging /home/dj/host/battlehack/node_modules/.bin/_mocha
+222 silly vacuum-fs purging /home/dj/host/battlehack/node_modules/.bin/mocha
+223 silly vacuum-fs quitting because other entries in /home/dj/host/battlehack/node_modules/.bin
+224 silly vacuum-fs quitting because other entries in /home/dj/host/battlehack/node_modules/.bin
+225 verbose stack Error: EROFS, symlink '../mocha/bin/mocha'
+225 verbose stack     at Error (native)
+226 verbose cwd /home/dj/host/battlehack
+227 error Linux 3.16.0-41-generic
+228 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+229 error node v0.12.6
+230 error npm  v2.11.2
+231 error path ../mocha/bin/mocha
+232 error code EROFS
+233 error errno -30
+234 error rofs EROFS, symlink '../mocha/bin/mocha'
+234 error rofs This is most likely not a problem with npm itself
+234 error rofs and is related to the file system being read-only.
+234 error rofs
+234 error rofs Often virtualized file systems, or other file systems
+234 error rofs that don't support symlinks, give this error.
+235 verbose exit [ -30, true ]
