@@ -9,29 +9,9 @@ app.config(function ($stateProvider) {
 
 });
 
-app.controller('WatchController', function ($scope, FullstackPics) {
+app.controller('WatchController', function ($scope, Uploader) {
 
     var isGaurding = false;
-    $scope.guard = function () {
-        setTimeout(function() {
-            isGaurding = !isGaurding;
-        }, 5000);
-    };
-
-    $scope.capture = function(){
-        var video = document.getElementsByClassName('webcam-live')[0];
-        var capturebutton = document.getElementById('capture-button');
-
-        var canvas = document.createElement("canvas");
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
-        canvas.getContext('2d')
-            .drawImage(video, 0, 0, canvas.width, canvas.height);
-
-        var img = document.createElement("img");
-        img.src = canvas.toDataURL();
-        capturebutton.appendChild(img);
-    };
 
     $scope.watch = false;
 	$scope.location = {};
@@ -39,10 +19,10 @@ app.controller('WatchController', function ($scope, FullstackPics) {
 		navigator.geolocation.getCurrentPosition(function(position){
 			$scope.location.latitude = position.coords.latitude;
             $scope.location.longitude = position.coords.longitude;
-            console.log('LOCATION:', $scope.location);
+            //console.log('LOCATION:', $scope.location);
             return $scope.location;
 		})
-	}
+	};
 	$scope.getGeo = function (){
         if(navigator.geolocation){
         	$scope.currentLocation();
@@ -51,21 +31,40 @@ app.controller('WatchController', function ($scope, FullstackPics) {
           alert("Geolocation is not supported by this browser");
         }
     };
-    
-    $scope.currentLocation();
 
     $scope.guard = function(){
+
+        setTimeout(function() {
+            isGaurding = !isGaurding;
+        }, 5000);
+
     	$scope.watch = true;
     	$scope.getGeo();
     	$scope.initialLocation = $scope.location;
-    	$scope.currentLocation();
+    	//$scope.currentLocation();
     	// while($scope.watch){
 	    // 	if($scope.location !== $scope.initialLocation){
 	    // 		alert('Geolocation has changed!');
 	    // 		return $scope.location;
 	    // 	};
     	// }
-    }
+    };
+
+    $scope.capture = function(){
+        var video = document.getElementById('v');
+        console.log(video, video.videoWidth, video.videoHeight);
+        var capturebutton = document.getElementById('c');
+
+        var canvas = document.createElement("canvas");
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        //canvas.getContext('2d')
+        //.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        var img = document.createElement("img");
+        img.src = canvas.toDataURL();
+        Uploader.upload(img.src, $scope.getGeo());
+    };
 
     /**
      * Based on https://timtaubert.de/demos/motion-detection/
@@ -116,7 +115,6 @@ app.controller('WatchController', function ($scope, FullstackPics) {
 
         // The target canvas.
         var canvas = document.getElementById("c");
-        console.log(canvas);
         context = canvas.getContext("2d");
 
         // Prepare buffers to store lightness data.
@@ -127,7 +125,34 @@ app.controller('WatchController', function ($scope, FullstackPics) {
         // Get the webcam's stream.
         navigator.getUserMedia({video: true}, startStream, function () {});
     }
+    var isHTriggered = false;
+    var isLTriggered = false;
+    var htc = 0, ltc = 0, htt, ltt;
 
+    function hManage() {
+        $scope.capture();
+        clearInterval(ltt);
+        isHTriggered = true;
+        htt = setInterval(function(){
+            htc++;
+            //console.log("H Count", htc);
+            $scope.capture();
+            //console.log('someone is wandering around your computer', new Date());
+        }, 10000);
+    }
+
+    function lManage() {
+        $scope.capture();
+        isLTriggered = true;
+        ltt = setInterval(function(){
+            ltc++;
+            //console.log("L Count",ltc);
+            $scope.capture();
+
+            //console.log('suspicious activity going on.', new Date());
+            isLTriggered = false;
+        }, 10000);
+    }
 
     function markLightnessChanges(data) {
         // Pick the next buffer (round-robin).
@@ -136,6 +161,17 @@ app.controller('WatchController', function ($scope, FullstackPics) {
         var l = 0;
 
         for (var i = 0, j = 0; i < buffer.length; i++, j += 4) {
+
+            if(ltc === 6){
+                clearInterval(ltt);
+                ltc = 0;
+            }
+
+            if(htc === 6){
+                clearInterval(htt);
+                htc = 0;
+            }
+
             // Determine lightness value.
             var current = lightnessValue(data[j], data[j + 1], data[j + 2]);
 
@@ -151,15 +187,15 @@ app.controller('WatchController', function ($scope, FullstackPics) {
                     console.log("h",h);
 
                     //if there is too much high risk triggers send phone call and text message to user
-                    if (h > 200) console.log('someone is wandering around your computer', new Date());
+                    if (h > 200 && !isHTriggered) hManage();
 
                 } else {
                     //start counting low risk triggers
                     l++;
 
                     //if there are over 500 low risk triggers send text to user
-                    if (l > 500){
-                        console.log('suspicious activing going on.', new Date())
+                    if (l > 500 && !isLTriggered && !isHTriggered){
+                        lManage();
                     }
 
                 }
