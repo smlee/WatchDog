@@ -13,6 +13,11 @@ app.controller('LoginCtrl', function ($scope, AuthService, $state) {
     $scope.login = {};
     $scope.error = null;
 
+    $scope.twitterAuth = function () {
+        AuthService.twitterAuth();
+    };
+
+
     $scope.sendLogin = function (loginInfo) {
 
         $scope.error = null;
