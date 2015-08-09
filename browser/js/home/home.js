@@ -25,10 +25,10 @@ app.controller('WatchDogCtrl', function($scope){
     $scope.geoGuard = function(){
     	$scope.initialLocation = $scope.location;
     	$scope.currentLocation();
-    	if($scope.location != $scope.initialLocation){
+    	if($scope.location !== $scope.initialLocation){
     		alert('Geolocation has changed!');
     		return $scope.location;
-    	});
-    }
+    	}
+    };
      
 });
