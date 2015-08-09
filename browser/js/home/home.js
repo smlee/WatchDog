@@ -5,7 +5,7 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('WatchDogCtrl', function($scope){
+app.controller('WatchDogCtrl', function(){
 
 
 });
