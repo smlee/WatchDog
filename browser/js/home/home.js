@@ -6,6 +6,7 @@ app.config(function ($stateProvider) {
 });
 
 app.controller('WatchDogCtrl', function($scope){
+	$scope.watch = false;
 	$scope.location = {};
 	$scope.currentLocation = function(){
 		navigator.geolocation.getCurrentPosition(function(position){
@@ -22,13 +23,17 @@ app.controller('WatchDogCtrl', function($scope){
           alert("Geolocation is not supported by this browser");
         }
     };
-    $scope.geoGuard = function(){
+    $scope.guard = function(){
+    	$scope.watch = true;
+    	$scope.getGeo();
     	$scope.initialLocation = $scope.location;
     	$scope.currentLocation();
-    	if($scope.location != $scope.initialLocation){
-    		alert('Geolocation has changed!');
-    		return $scope.location;
-    	});
+    	while($scope.watch){
+	    	if($scope.location != $scope.initialLocation){
+	    		alert('Geolocation has changed!');
+	    		return $scope.location;
+	    	});	
+    	}
     }
      
 });
