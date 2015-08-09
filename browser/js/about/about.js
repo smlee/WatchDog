@@ -182,4 +182,22 @@ app.controller('WatchController', function ($scope, FullstackPics) {
 
     initialize();
 
+
+    // THE BARK
+    var music = new Howl({
+      urls: ['/sounds/dog_german_shepherd_dog_barking_inside_kennel.mp3']
+    });
+
+    console.log("loading", music);
+
+    $scope.play = function(){
+        music.play();
+        console.log('PLAY');
+    };
+
+    $scope.stop = function(){
+        music.stop();
+        console.log('STOP');
+    };
+
 });
