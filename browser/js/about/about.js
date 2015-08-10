@@ -35,10 +35,13 @@ app.controller('WatchController', function ($scope, Uploader) {
     $scope.currentLocation();
 
     $scope.guard = function(){
-        isGaurding = true;
-    	$scope.watch = true;
-    	$scope.getGeo();
-    	$scope.initialLocation = $scope.location;
+        setTimeout(function() {
+            isGaurding = true;
+            
+            $scope.getGeo();
+            $scope.initialLocation = $scope.location;
+        },10000)
+        $scope.watch = true;
     	$scope.currentLocation();
     	// while($scope.watch){
 	    // 	if($scope.location !== $scope.initialLocation){
@@ -182,7 +185,7 @@ app.controller('WatchController', function ($scope, Uploader) {
 
                     //if there are over 500 low risk triggers send text to user
                     if (l > 500 && !isLTriggered && !isHTriggered){
-                        $scop.play();
+                        $scope.play();
                         $scope.capture();
                         isLTriggered = true;
                     }
