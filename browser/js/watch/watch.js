@@ -4,7 +4,7 @@ app.config(function ($stateProvider) {
     $stateProvider.state('watch', {
         url: '/watch',
         controller: 'WatchController',
-        templateUrl: 'js/about/about.html'
+        templateUrl: 'js/watch/watch.html'
     });
 
 });
@@ -44,7 +44,7 @@ app.controller('WatchController', function ($scope, Uploader, SoundFactory, CamF
         requestFullScreen(document.body);
         setTimeout(function() {
             CamFactory.setWatch();
-            $scope.initialLocation = $scope.getGeo();;
+            $scope.initialLocation = $scope.getGeo();
         },10000);
         $scope.watch = true;
     };
