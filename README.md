@@ -1,4 +1,4 @@
-# ${1:WatchDog}
+# WatchDog
 WatchDog is a rapid deploy WebApp to prevent theft of WiFi-
 enabled browser-capable mobile devices with a camera, like 
 most modern laptops, tablets and phones. WatchDog uses 
