@@ -9,8 +9,8 @@ theft!
 URL soon (and Usage instructions; maybe even Node-Webkit/NW.js)
 ## History
 Born in the thick of Battle(Hack-NYC-2015), WatchDog was conceived when 
-a professional theif evaded security cameras and stole a team members 
-unattended laptop. Because another team-member knew of a friend who 
+a professional theif evaded security cameras and stole a teammember's 
+unattended laptop. Because another teammember knew of a friend who 
 recently had her mobile phone stolen,that same week, and had been 
 already been thinking about how to precent theft of WiFi-enabled 
 browser-capable mobile devices.
