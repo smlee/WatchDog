@@ -1,5 +1,3 @@
-<snippet>
-  <content><![CDATA[
 # ${1:WatchDog}
 WatchDog is a rapid deploy WebApp to prevent theft of WiFi-
 enabled browser-capable mobile devices with a camera, like 
@@ -20,8 +18,6 @@ precent theft of WiFi-enabled browser-capable mobile devices
 - [Katrina Liao](http://en.wikipedia.org/wiki/Markdown) 
 - [Sangmin Lee](http://en.wikipedia.org/wiki/Markdown) 
 - [DJ Nadgar](http://en.wikipedia.org/wiki/Markdown) 
+
 ## License
 MIT License
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
