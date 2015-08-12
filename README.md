@@ -15,9 +15,9 @@ member new of a friend who recently had her mobile phone stolen,
 that same week, and had been already been thinking about how to 
 precent theft of WiFi-enabled browser-capable mobile devices
 ## Credits
-- [Katrina Liao](http://en.wikipedia.org/wiki/Markdown) 
-- [Sangmin Lee](http://en.wikipedia.org/wiki/Markdown) 
-- [DJ Nadgar](http://en.wikipedia.org/wiki/Markdown) 
+- [Katrina Liao](https://www.linkedin.com/profile/view?id=AAEAAAHi1PYB3LcxwxVp2gZxDg7QpYjP5fz3g74&authType=name&authToken=3eN8&trk=prof-proj-cc-name) 
+- [Sangmin Lee](https://www.linkedin.com/in/smlee23) 
+- [DJ Nadgar](https://www.linkedin.com/in/djnadgar) 
 
 ## License
 MIT License
