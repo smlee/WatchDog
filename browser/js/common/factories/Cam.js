@@ -71,12 +71,12 @@ app.factory('CamFactory', function(SoundFactory, Uploader, GeoFactory){
             // Full opacity for changes.
             data[j + 3] = 255 * lightnessHasChanged(i, current);
             if (lightnessHasChanged(i, current) && watch){
-                if (current > 70) {
+                if (current > 80) {
                     //start counting high risk activities
                     h++;
-
+                    console.log("H", h, "current", current);
                     //if there is too much high risk triggers send phone call and text message to user
-                    if (h > 200 && !isHTriggered) {
+                    if (h > 300 && !isHTriggered) {
                         capture();
                         isHTriggered = true;
                         SoundFactory.bark.play();
@@ -85,11 +85,10 @@ app.factory('CamFactory', function(SoundFactory, Uploader, GeoFactory){
                 } else {
                     //start counting low risk triggers
                     l++;
-                    //console.log("L", l, "current", current);
+                    console.log("L", l, "current", current);
                     //if there are over 500 low risk triggers send text to user
-                    if (l > 500 && !isLTriggered && !isHTriggered){
+                    if (l > 600  && !isHTriggered){
                         SoundFactory.growl.play();
-                        isLTriggered = true;
                     }
 
                 }
