@@ -3,7 +3,7 @@ WatchDog is a rapid deploy WebApp to prevent theft of WiFi-enabled browser-capab
 ## Usage
 URL soon (and Usage instructions; maybe even Node-Webkit/NW.js)
 ## History
-Born in the thick of Battle(Hack-NYC-2015), WatchDog was conceived when a professional thief evaded security cameras and stole a team-member's unattended laptop. Because another team-member knew of a friend who recently had her mobile phone stolen,that same week, and had been already been thinking about how to percent theft of WiFi-enabled browser-capable mobile devices.
+Born in the thick of Battle(Hack-NYC-2015), WatchDog was conceived when a professional thief evaded security cameras and stole a team-member's unattended laptop. Because another team-member knew of a friend who recently had her mobile phone stolen, that same week, and had already been thinking about how to prevent theft of WiFi-enabled browser-capable mobile devices.
 ## Awards
 WatchDog was conceived, planned, implemented and demonstrated in less than 24 hours at BattleHack NYC 2015 where it was awarded the Twilio Sponsor Prize.
 ## Credits
