@@ -6,19 +6,31 @@
 
 .login-form {
   width: 50%;
-  margin: 0  auto;
+  margin: 50px auto;
   padding: 80px;
   background-color: black;
   opacity: 0.85;
   color: white;	
+  input{
+  	border-radius: 0px;
+  }
   .btn{
 	  color: white;
 	  border: 1px solid white;
 	  background-color: transparent;
+	  border-radius: 0px;
 	  &:hover{
 	  	color: #ffc400;
 	  }
+	  &:focus{
+	  	color: #ffc400;
+	  }
   }
+}
+
+.alert{
+	padding: 10px;
+	border-radius: 0px;
 }
 
 .twitter{
