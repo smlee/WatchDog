@@ -7,6 +7,14 @@ body {
   h1, h2, h3, p{
     font-family: 'Noto Sans', sans-serif;
   }
+  button{
+    border-radius: 0px !important;
+    &:focus{
+      outline: none !important;
+      text-decoration: none;
+    }
+  }
+
 }
 
 @mixin clearfix {
