@@ -2,6 +2,20 @@ section{
 	min-height: 100vh;
 }
 
+a{
+	&:hover{
+		text-decoration:none;
+	}
+	&:focus{
+		text-decoration: none;
+	}
+	&:active{
+		text-decoration: none;
+	}
+	&:visited{
+		text-decoration: none;
+	}
+}
 .section-content{
 	padding: 60px;
 }
@@ -9,6 +23,8 @@ section{
 .title{
 	text-align: center;
 	font-weight: bolder;
+	color: #F5E7C3;
+	text-shadow: 2px 2px #008AAE;
 }
 
 #about{
@@ -76,20 +92,29 @@ background-color: #8a5a59;
 
 .member{
 	text-align: center;
+	margin-bottom: 20px;
+	color: #F5E7C3;
+	text-shadow: 2px 2px #008AAE;
 	img{
 		border-radius: 50%;
 		width: 100px;
 		display: inline;
 	}
-	h2{
-		display: inline;
-		margin-left: 20px;
+	a{
+		color: #F5E7C3;
+		text-shadow: 2px 2px #008AAE;
+		&:hover{
+			color: #F5E7C3;
+			text-shadow: 2px 2px #008AAE;
+		}
 	}
 }
 
 hr{
-	border-top: 3px solid black;
+	border-top: 3px solid #003F5D;
 	width: 20%;
+	background-color: #008BAF;
+	height: 1px;
 }
 
 .top20{
