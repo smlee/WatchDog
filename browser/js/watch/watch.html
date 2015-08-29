@@ -1,32 +1,42 @@
 <section id="watch">
 <div class='section-content'>
-    <img src='/images/dog.jpg' class='watch-dog'></img>
-    <button ng-click='guard()' ng-hide='watch' class='btn guard-btn'>Guard</button> <button ng-click='watch = false' ng-show='watch' class='btn guard-btn'>Sit</button>
+    <img src='/images/sit.jpg' class='watch-dog' ng-hide='watch'></img>
+    <img src='/images/stand.png' class='watch-dog' ng-show='watch'></img>
+    <button ng-click='guard()' ng-hide='watch' class='btn guard-btn top40'>Guard</button> 
+    <button ng-click='watch = false' ng-show='watch' class='btn guard-btn top40'>Sit</button>
 
-    <canvas id="c" width="320" height="240"></canvas>
+    <div class='row top100 test'>
+    	<div class='col-md-6 text-center'>
+	    	<h1> Test </h1>
+	    	<hr>
+	    	<div class="col-md-12">
+			<!-- <div class="btn-group" role="group"> -->
+				<button type="button" class="btn guard-btn" id="music-play" ng-click='play()' ng-hide='barking'>
+			  		Bark
+				</button>
+				<button type="button" class="btn guard-btn" id="music-stop" ng-click='stop()' ng-show='barking'>
+					Quiet
+				</button>
+			<!-- </div> -->
+				<h4>Volume</h4>
+				<input id="volume" type="range" min="0" max="100" value="70">
+			</div>
+    	</div>
+    	<div class='col-md-6 text-center'>
+	    	<h1> Monitoring </h1>
+	    	<hr>
+	    	<div class='row text-center'>
+	    		<div class='col-xs-6 text-center'>
+		    		<h4>Motion</h4>
+				    <canvas id="c" width="180" height="140"></canvas>
+			    </div>
+			    <div class='col-xs-6 text-center'>
+				    <h4>Image</h4>
+				    <video id="v" width="220" height="140"></video>
+				</div>
+			</div>
+	    </div>
+    </div>
 
-    <video id="v" width="320" height="240"></video>
-
-    <div class="col-md-12">
-		<div class="btn-group" role="group">
-			<!-- <button type="button" class="btn btn-default" id="music-loop" ng-click='loop()'>
-				<i class="fa fa-repeat"></i>
-			</button> -->
-			<button type="button" class="btn btn-default" id="music-play" ng-click='play()'>
-		  		<i class="fa fa-play"></i>
-			</button>
-			<button type="button" class="btn btn-default" id="music-stop" ng-click='stop()'>
-				<i class="fa fa-stop"></i>
-			</button>
-			<button type="button" class="btn btn-default" id="music-fadein" ng-click='fadeIn()'>
-				<i class="fa fa-sign-in"></i>
-			</button>
-			<button type="button" class="btn btn-default" id="music-fadeout" ng-click='fadeOut'>
-				<i class="fa fa-sign-out"></i>
-			</button>
-
-		</div>
-		<input id="volume" type="range" min="0" max="100" value="70">
-	</div>
 </div>
 </section>

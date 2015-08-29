@@ -1,6 +1,7 @@
 #login{
 	background: url(/images/bg.jpg);
 	background-size: cover;
+	overflow: hidden;
 }
 
 
@@ -20,10 +21,11 @@
 	  background-color: transparent;
 	  border-radius: 0px;
 	  &:hover{
-	  	color: #ffc400;
+	  	color: $light-tan;
+	  	border: 1px solid $light-tan;
 	  }
 	  &:focus{
-	  	color: #ffc400;
+	  	color: $light-tan;
 	  }
   }
 }
