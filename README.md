@@ -1,5 +1,5 @@
 # WatchDog
-WatchDog is a rapid deploy web application that helps prevent theft of WiFi-enabled and browser-capable mobile devices with a camera (laptops, tablets and phones). WatchDog uses geolocation and WebRTC to detect motion, Socket.io to determine loss-of-connection, and the Twilio API for SMS alerts or phone call notifications. WatchDog will also bark like a car alarm.
+WatchDog is a rapid deploy web application which may help prevent theft of WiFi-enabled and browser-capable mobile devices with a camera (laptops, tablets and phones). WatchDog uses geolocation and WebRTC to detect motion, Socket.io to determine loss-of-connection, and the Twilio API for SMS alerts or phone call notifications. WatchDog will also bark like a car alarm.
 
 ## Background
 WatchDog was conceived, built, and demonstrated in less than 24 hours at BattleHack NYC 2015 where it was awarded the Twilio Sponsor Prize.
