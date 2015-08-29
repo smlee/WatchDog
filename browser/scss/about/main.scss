@@ -1,18 +1,57 @@
 #watch{
-	background-color: #F1F1F1;
+	background-color: #FCFFD9;
+	h4{
+		text-transform: uppercase;
+		font-weight: 200px;
+	}
+	hr{
+		width: 50%;
+	}
 }
 
 .watch-dog{
 	margin: 0 auto;
-	display: block
+	display: block;
+	height: 300px;
 }
 
 .guard-btn {
-	margin: 20px auto 0;
+	margin: 20px auto;
+	padding: 10px 15px;
+	width: 100px;
+	color: white;
+	background-color: black;
 	display: block;
+	&:hover{
+		color: $light-tan;
+	}		
+	&:focus{
+		color: $light-tan;
+	}
 }
 
 webcam{
-	margin: 0 auto;
+	margin: 20px auto;
 	display: block;
+}
+
+canvas{
+	border: 1px solid $grey-tan;
+}
+
+#volume{
+	width: 100px;
+	margin: 0 auto;
+}
+
+.top100{
+	margin-top: 100px;
+}
+
+.top40{
+	margin-top: 40px;
+}
+
+.test{
+	width: 90%;
 }

@@ -24,11 +24,11 @@ a{
 	text-align: center;
 	font-weight: bolder;
 	color: #F5E7C3;
-	text-shadow: 2px 2px #008AAE;
+	text-shadow: 2px 2px $blue;
 }
 
 #about{
-	background-color: #CAC3BB;
+	background-color: $grey-tan;
 	.section-content{
 		position: relative;
 	}
@@ -50,7 +50,7 @@ a{
 	 .brand{
 		font-family: 'Bitter', cursive;
 		font-size: 100px;
-		text-shadow: 2px 2px #F5E7C3;
+		text-shadow: 2px 2px $light-tan;
 		margin-top: 0;
 		text-align: center;
 	}
@@ -61,7 +61,7 @@ a{
 
 
 #friends{
-background-color: #8a5a59;
+background-color: $red-tan;
 }
 .api{
 	text-align: center;
@@ -93,27 +93,27 @@ background-color: #8a5a59;
 .member{
 	text-align: center;
 	margin-bottom: 20px;
-	color: #F5E7C3;
-	text-shadow: 2px 2px #008AAE;
+	color: $light-tan;
+	text-shadow: 2px 2px $blue;
 	img{
 		border-radius: 50%;
 		width: 100px;
 		display: inline;
 	}
 	a{
-		color: #F5E7C3;
-		text-shadow: 2px 2px #008AAE;
+		color: $light-tan;
+		text-shadow: 2px 2px $blue;
 		&:hover{
-			color: #F5E7C3;
-			text-shadow: 2px 2px #008AAE;
+			color: $light-tan;
+			text-shadow: 2px 2px $blue;
 		}
 	}
 }
 
 hr{
-	border-top: 3px solid #003F5D;
+	border-top: 3px solid $dark-blue;
 	width: 20%;
-	background-color: #008BAF;
+	background-color: $light-blue;
 	height: 1px;
 }
 

@@ -50,14 +50,19 @@ app.controller('WatchController', function ($scope, Uploader, SoundFactory, CamF
     };
 
     // THE BARK
+
+    $scope.barking = false;
+
     $scope.play = function(){
         SoundFactory.bark.play();
-        //console.log('PLAY');
+        $scope.barking = true;
+        console.log('BARK', $scope.barking);
     };
 
     $scope.stop = function(){
         SoundFactory.bark.stop();
-        //console.log('STOP');
+        $scope.barking = false;
+        console.log('BARK', $scope.barking);
     };
 
     //initialize();
