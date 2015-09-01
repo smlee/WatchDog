@@ -41,7 +41,8 @@ app.controller('WatchController', function ($scope, Uploader, SoundFactory, CamF
     };
 
     $scope.guard = function(){
-        requestFullScreen(document.body);
+        // fullscreen removed
+        // requestFullScreen(document.body);
         setTimeout(function() {
             CamFactory.setWatch();
             $scope.initialLocation = $scope.getGeo();
