@@ -1,6 +1,5 @@
 app.config(function ($stateProvider) {
 
-    // Register our *about* state.
     $stateProvider.state('watch', {
         url: '/watch',
         controller: 'WatchController',
@@ -41,7 +40,7 @@ app.controller('WatchController', function ($scope, Uploader, SoundFactory, CamF
     };
 
     $scope.guard = function(){
-        requestFullScreen(document.body);
+        // requestFullScreen(document.body);
         setTimeout(function() {
             CamFactory.setWatch();
             $scope.initialLocation = $scope.getGeo();
@@ -49,22 +48,16 @@ app.controller('WatchController', function ($scope, Uploader, SoundFactory, CamF
         $scope.watch = true;
     };
 
-    // THE BARK
-
     $scope.barking = false;
 
     $scope.play = function(){
         SoundFactory.bark.play();
         $scope.barking = true;
-        console.log('BARK', $scope.barking);
     };
 
     $scope.stop = function(){
         SoundFactory.bark.stop();
         $scope.barking = false;
-        console.log('BARK', $scope.barking);
     };
-
-    //initialize();
 
 });
