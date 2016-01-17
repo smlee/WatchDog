@@ -5,7 +5,7 @@ WatchDog is a rapid deploy web application which may help prevent theft of WiFi-
 WatchDog was conceived, built, and demonstrated in less than 24 hours at BattleHack NYC 2015 where it was awarded the Twilio Sponsor Prize.
 
 ## Credits
-- [Katrina Liao](https://www.linkedin.com/profile/view?id=AAEAAAHi1PYB3LcxwxVp2gZxDg7QpYjP5fz3g74&authType=name&authToken=3eN8&trk=prof-proj-cc-name) [@ksliao](https://twitter.com/ksliao)
+- [Katrina Liao](https://www.linkedin.com/profile/view?id=AAEAAAHi1PYB3LcxwxVp2gZxDg7QpYjP5fz3g74&authType=name&authToken=3eN8&trk=prof-proj-cc-name) [@ksliao](https://twitter.com/misst3rk)
 - [Sangmin Lee](https://www.linkedin.com/in/smlee23) [@samgyupsal](https://twitter.com/samgyupsal_)
 - [DJ Nadgar](https://www.linkedin.com/in/djnadgar) [@exciteresearch](https://twitter.com/exciteresearch)
 
